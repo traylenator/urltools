@@ -12,8 +12,6 @@ except:
     from urllib import quote
 
 
-__version__ = '0.3.2'
-
 __all__ = ['URL', 'SplitResult', 'parse', 'extract', 'construct', 'normalize',
            'compare', 'normalize_host', 'normalize_path', 'normalize_query',
            'normalize_fragment', 'encode', 'unquote', 'split', 'split_netloc',
