@@ -1,12 +1,11 @@
 urltools
 ========
 
+Some functions to parse and normalize URLs.
+
 ## NOTE and credit
 
 **this is base on the original work that used to be here github.com/rbaier/urltools.git but is now gone**
-
-Some functions to parse and normalize URLs.
-
 
 ## Functions
 
@@ -91,13 +90,14 @@ Besides the already described main functions `urltools` has some more functions 
 
 ## Installation
 
+**pip is not working yet**
 You can install `urltools` from the Python Package Index (PyPI):
 
     pip install urltools
 
 ... or get the newest version directly from GitHub:
 
-    pip install -e git://github.com/rbaier/urltools.git#egg=urltools
+    pip install -e git://github.com/itzik-h/urltools.git#egg=urltools
 
 
 
