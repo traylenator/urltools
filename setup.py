@@ -8,9 +8,9 @@ setup(
     name = 'urltools',
     version = urltools.__version__,
     description = 'Some functions to parse and normalize URLs.',
-    author = 'Roderick Baier',
-    author_email = 'roderick.baier@gmail.com',
+    author = 'Original work by Roderick Baier, republished by itzik-h',
+    author_email = '',
     license = 'MIT',
-    url = 'https://github.com/rbaier/urltools',
+    url = 'https://github.com/itzik-h/urltools',
     packages = find_packages(exclude=['tests'])
 )
