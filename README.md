@@ -1,6 +1,10 @@
 urltools
 ========
 
+## NOTE and credit
+
+**this is base on the original work that used to be here github.com/rbaier/urltools.git but is now gone**
+
 Some functions to parse and normalize URLs.
 
 
