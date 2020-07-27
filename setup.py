@@ -12,5 +12,6 @@ setup(
     author_email = '',
     license = 'MIT',
     url = 'https://github.com/itzik-h/urltools',
+    download_url = 'https://github.com/itzik-h/urltools/archive/0.3.2.tar.gz'
     packages = find_packages(exclude=['tests'])
 )
