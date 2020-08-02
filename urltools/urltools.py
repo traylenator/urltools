@@ -41,6 +41,7 @@ def _get_public_suffix_list():
             psl.add(item)
     return psl
 
+
 PSL = _get_public_suffix_list()
 assert len(PSL) > 0, 'Public Suffix List is empty!'
 
@@ -357,11 +358,11 @@ def split(url):
             netloc = rest
     if l_query > 0:
         if l_frag > 0:
-            query = rest[l_query+1:l_frag]
+            query = rest[l_query + 1:l_frag]
         else:
-            query = rest[l_query+1:]
+            query = rest[l_query + 1:]
     if l_frag > 0:
-        fragment = rest[l_frag+1:]
+        fragment = rest[l_frag + 1:]
     if not scheme:
         path = netloc + path
         netloc = ''
@@ -424,15 +425,15 @@ def split_host(host):
         wildcard_tld = '*.' + tld
         exception_tld = '!' + tld
         if exception_tld in PSL:
-            domain = '.'.join(parts[:i+1])
-            tld = '.'.join(parts[i+1:])
+            domain = '.'.join(parts[:i + 1])
+            tld = '.'.join(parts[i + 1:])
             break
         if tld in PSL:
             domain = '.'.join(parts[:i])
             break
         if wildcard_tld in PSL:
-            domain = '.'.join(parts[:i-1])
-            tld = '.'.join(parts[i-1:])
+            domain = '.'.join(parts[:i - 1])
+            tld = '.'.join(parts[i - 1:])
             break
     if '.' in domain:
         subdomain, domain = domain.rsplit('.', 1)

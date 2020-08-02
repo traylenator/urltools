@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-#import pytest
+# import pytest
 
 from urltools import parse, extract, encode, split, split_netloc, split_host
 from urltools import normalize, normalize_path, normalize_query, unquote, normalize_host, normalize_fragment
 from urltools.urltools import _get_public_suffix_list, _clean_netloc
 
 
-#@pytest.mark.skipif("True")
+# @pytest.mark.skipif("True")
 def test_get_public_suffix_list():
     psl = _get_public_suffix_list()
     assert "de" in psl
@@ -72,7 +72,7 @@ def test_normalize():
     assert normalize("http://example.com/foo%25%32%35bar") == "http://example.com/foo%25bar"
     assert normalize("http://example.com/foo/%25%32%35/bar") == "http://example.com/foo/%25/bar"
     assert normalize("http://example.com/%7Efoo") == "http://example.com/~foo"
-    assert normalize("http://example.com/foo%23bar") == "http://example.com/foo%23bar" # %23 = #
+    assert normalize("http://example.com/foo%23bar") == "http://example.com/foo%23bar"  # %23 = #
 
     # query
     assert normalize("http://example.com/?x=1") == "http://example.com/?x=1"
